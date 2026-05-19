@@ -1,6 +1,6 @@
 import { create } from "zustand";
 
-const targetDate = new Date("Jul 11, 2026 16:00:00").getTime();
+const targetDate = new Date("Jul 11, 2026 17:30:00").getTime();
 
 const useEventDateStore = create((set, get) => {
   const now = Date.now();
