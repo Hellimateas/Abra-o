@@ -27,7 +27,7 @@ const AbraaoArcaNoeTheme = {
     dateLabel: "Data:",
     dateValue: "11 de Junho",
     timeLabel: "Horário:",
-    timeValue: "16h",
+    timeValue: "17h30",
     presenceNote: "",
   },
 
