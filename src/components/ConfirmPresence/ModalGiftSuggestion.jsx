@@ -14,7 +14,7 @@ const ModalGiftSuggestion = ({ open, handleClose }) => {
   const listSugestionGifts = [
     {
       img: "assets/svg/roupa.svg",
-      desc: "Visto 2 anos",
+      desc: "Visto 2/3 anos",
     },
     {
       img: "assets/svg/shoes.svg",
