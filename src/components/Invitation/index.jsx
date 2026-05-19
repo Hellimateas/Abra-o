@@ -24,7 +24,7 @@ const Invitation = () => {
             <h1>{invitation.headline1}</h1>
             <div className="banner-badge">
               <img
-                src="/assets/svg/NomeAbraao-bg.png"
+                src="/assets/svg/home.png"
                 alt="Badge  Abraão Levi"
                 className="badge-image"
               />
