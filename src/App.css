@@ -102,7 +102,7 @@ body {
   .banner-niver {
     width: 550px;
     height: 550px;
-    background-image: url("/public/assets/svg/banner.svg");
+    background-image: url("/public/assets/svg/NomeAbraao-bg.png");
     background-size: cover;
     background-position: top;
   }
@@ -430,7 +430,7 @@ body {
   .banner-niver {
     width: 360px;
     height: 360px;
-    background-image: url("/public/assets/svg/banner.svg");
+    background-image: url("/public/assets/svg/NomeAbraao-bg.png");
     background-size: cover;
     background-position: top;
   }
