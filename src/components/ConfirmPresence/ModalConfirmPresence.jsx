@@ -19,7 +19,7 @@ import { useFormik } from "formik";
 import * as Yup from "yup";
 
 const validationSchema = Yup.object({
-  name: Yup.string().required("Preecha seu nome"),
+  name: Yup.string().required("Preecha seu nome ou apelido"),
   confirmPresence: Yup.string().required("Confirme sua presença"),
   amountAdults: Yup.number()
     .transform((_, originalValue) => {
