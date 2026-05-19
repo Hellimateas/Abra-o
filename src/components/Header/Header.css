@@ -1,0 +1,244 @@
+.fixed-header {
+  color: var(--color-primary-dark);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  z-index: 1000;
+  transition: background-color 0.5s ease, padding 0.5s ease;
+}
+
+.fixed-header.opaque {
+  color: var(--color-primary-dark);
+  /* background-color é controlado por JavaScript inline */
+}
+
+.fixed-color {
+  color: var(--color-primary-dark);
+}
+
+.fixed-color.opaque {
+  color: var(--color-primary-dark);
+}
+
+.header {
+  max-width: 1140px;
+  height: 80px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+.logoimg {
+  width: auto;
+  font-size: large;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.menu .menu-opener {
+  display: none;
+}
+
+.menu {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu ul,
+.menu li {
+  list-style: none;
+}
+
+.menu ul {
+  display: flex;
+}
+
+.menu li a {
+  text-decoration: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.menu li a span {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.menu li a span:hover,
+.menu .active a span {
+  border-bottom: 5px solid #91D8F6;
+  font-size: 1.1em;
+}
+
+.music-control-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.music-controls {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 80px;
+}
+
+.music-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  padding: 10px;
+  transition: transform 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+}
+
+.music-button:hover {
+  transform: scale(1.1);
+}
+
+.music-button:active {
+  transform: scale(0.95);
+}
+
+/* Botão de nota musical animado (primeira renderização) */
+@keyframes musicPulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.35);
+  }
+}
+
+.music-note-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 26px;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: musicPulse 1s ease-in-out infinite;
+  line-height: 1;
+}
+
+.music-note-btn:active {
+  transform: scale(0.9);
+  animation: none;
+}
+
+/* Container de configurações de áudio */
+.audio-settings-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.audio-settings-container .MuiIconButton-root {
+  color: var(--color-primary-dark);
+}
+
+.mobile-menu-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 0px;
+}
+
+.mobile-menu-container .MuiIconButton-root {
+  color: var(--color-primary-dark);
+}
+
+.mobile-volume-slider {
+  width: 70px;
+  height: 4px;
+  -webkit-appearance: none;
+  appearance: none;
+  background: linear-gradient(to right, #91D8F6 0%, #91D8F6 30%, #ddd 30%, #ddd 100%);
+  border-radius: 2px;
+  outline: none;
+  cursor: pointer;
+}
+
+.mobile-volume-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 12px;
+  height: 12px;
+  background: #004c9d;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.mobile-volume-slider::-moz-range-thumb {
+  width: 12px;
+  height: 12px;
+  background: #004c9d;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+}
+
+.mobile-volume-label {
+  font-size: 11px;
+  font-weight: 600;
+  color: #004c9d;
+  min-width: 35px;
+  text-align: right;
+}
+
+@media (max-width: 1291px) {
+  .header {
+    padding-left: 30px;
+    padding-right: 30px;
+    max-width: 800px;
+  }
+}
+
+@media (max-width: 816px) {
+  .header {
+    max-width: 650px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media (max-width: 625px) {
+  .header {
+    padding-left: 30px;
+    padding-right: 30px;
+    max-width: 400px;
+  }
+  .fixed-header {
+    color: var(--color-primary-dark);
+    position: fixed;
+    top: 0;
+    background-color: var(--color-primary-light);
+    box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.3);
+  }
+  .menu .menu-opener {
+    display: block;
+    cursor: pointer;
+  }
+  
+  nav {
+    display: none;
+    position: absolute;
+    z-index: 99;
+    background-color: var(--color-primary-dark);
+    width: 50vw;
+    height: calc(100vh - 80px);
+    top: 80px;
+    right: 0;
+  }
+}

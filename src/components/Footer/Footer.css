@@ -1,0 +1,243 @@
+/* footer {
+  background-color: #000;
+  background: url('/public/assets/img/element/areia.png');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  justify-content: center;
+  height: 200px;
+  position: relative;
+  margin-bottom: 0;
+} */
+footer {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-top: 50px;
+  /* base escura */
+  background: linear-gradient(to top, #1a1a1a 0%, #000 40%);
+
+  /* efeito de tábuas de madeira */
+background-image: 
+    repeating-linear-gradient(
+      90deg,
+      #e6c29f 0px,
+      #e6c29f 40px,
+      #d2a679 40px,
+      #d2a679 80px
+    );
+
+
+  /* mistura dos dois fundos */
+  background-blend-mode: multiply;
+
+  /* sombra superior (profundidade de palco) */
+  box-shadow: inset 0 20px 40px rgba(0, 0, 0, 0.8);
+}
+.display-footer {
+  display: flex;
+  justify-content: space-around;
+  font-family: cursive, sans-serif;
+  width: 1140px;
+  align-items: end;
+  padding-bottom: 10px;
+}
+
+.display-footer .contact {
+  font-family: cursive, sans-serif;
+  text-align: center;
+}
+
+.display-footer .display-contact {
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
+}
+
+.display-footer .display-contact a {
+  display: flex;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.display-footer .whatsapp {
+  margin-left: 5px;
+  width: 40px;
+}
+
+.display-footer .copyright {
+  display: flex;
+}
+
+.display-info {
+  display: flex;
+}
+
+.footer-decoration {
+  position: absolute;
+  width: 100%;
+  top: -90px;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banda {
+  width: 250px;
+  height: auto;
+}
+
+
+
+
+
+@media (max-width: 1291px) {
+  .display-footer {
+    max-width: 800px;
+  }
+
+  .display-info {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-right: 30px;
+  }
+
+  .display-footer .display-contact {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .display-footer .copyright {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 816px) {
+  footer {
+    height: 120px;
+  }
+
+  .display-footer {
+    max-width: 650px;
+    padding-left: 20px;
+  }
+
+  .display-footer .copyright {
+    max-width: 320px;
+  }
+
+  .footer-decoration {
+    top: -70px;
+  }
+
+  .banda {
+    width: 200px;
+  }
+}
+
+@media (max-width: 700px) {
+}
+
+@media (max-width: 625px) {
+  footer {
+    height: 110px;
+  }
+
+  .display-footer {
+    flex-direction: column;
+    padding: 0px;
+    margin: 0px;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .display-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+  }
+
+  .display-footer .display-contact {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-right: 0px;
+  }
+
+  .display-footer .copyright {
+    max-width: 100%;
+  }
+
+  .footer-decoration {
+    top: -60px;
+  }
+
+  .banda {
+    width: 180px;
+  }
+}
+
+@media (max-width: 500px) {
+
+
+}
+
+@media (max-width: 450px) {
+
+  .display-footer {
+    flex-direction: column;
+    padding: 0px;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .display-footer .display-contact {
+    font-size: 15px;
+  }
+
+  .display-footer .copyright {
+    font-size: 13px;
+    text-align: center;
+  }
+
+  .display-footer .display-contact {
+    flex-direction: row;
+    margin-right: 0px;
+  }
+
+  .display-footer .display-contact a {
+    margin-top: 0px;
+    margin-left: 10px;
+  }
+
+  .display-footer .copyright p {
+    margin-top: 0px;
+  }
+}
+
+@media (max-width: 344px) {
+  footer {
+    height: 105px;
+  }
+
+  .footer-decoration {
+    top: -60px;
+  }
+
+  .banda {
+    width: 170px;
+  }
+
+  .display-footer .copyright {
+    font-size: 12px;
+    padding: 0 10px;
+  }
+}
+

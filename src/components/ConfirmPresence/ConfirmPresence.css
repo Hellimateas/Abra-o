@@ -1,0 +1,238 @@
+.section-confirm-presence {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  background: linear-gradient(180deg, #c2f691 0%, #d4e2c3 50%, #a3f08a 100%);
+}
+
+.section-confirm-presence .container {
+  margin: 0px;
+}
+
+.section-confirm-presence .title {
+  color: var(--color-primary-dark);
+  font-size: 30px;
+  font-family: "Satisfy", cursive;
+  text-align: center;
+}
+ 
+.section-confirm-presence .display-buttons {
+  display: flex;
+  background-color: var(--color-green-transparent);
+  width: 1140px;
+  justify-content: space-around;
+  padding-bottom: 25px;
+  padding-top: 25px;
+  border-radius: 25px;
+}
+
+.section-confirm-presence .button-and-legend {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.section-confirm-presence .button-and-legend .text {
+  font-size: 25px;
+  font-family: "Concert One", sans-serif;
+}
+
+.section-confirm-presence .display-informative {
+  display: flex;
+  flex-direction: column;
+}
+
+button.button {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.button img {
+  width: 250px;
+  height: 250px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.button:hover img {
+  opacity: 0.8;
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.button:active img {
+  transform: scale(0.95);
+}
+
+.display-informative {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.display-text {
+  font-size: 24px;
+  font-weight: 600;
+  gap: 10px;
+  text-transform: uppercase;
+  padding: 10px;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  line-height: 1;
+  margin-bottom: 0px;
+}
+
+.display-informative .icon {
+  width: 90px;
+}
+
+.display-mobile {
+  display: none;
+}
+
+@media (max-width: 1291px) {
+  .section-confirm-presence .title {
+    max-width: 760px;
+    font-size: 25px;
+  }
+
+  .section-confirm-presence .display-buttons {
+    display: flex;
+    width: 760px;
+    padding-bottom: 20px;
+    padding-top: 25px;
+  }
+
+  .section-confirm-presence .button-and-legend .text {
+    font-size: 22px;
+  }
+
+  .button img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .display-text {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 816px) {
+  .section-confirm-presence {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .section-confirm-presence .title {
+    font-size: 19px;
+  }
+
+  .section-confirm-presence .display-buttons {
+    width: 590px;
+  }
+
+  .section-confirm-presence .button-and-legend .text {
+    font-size: 16px;
+  }
+
+  .button img {
+    width: 160px;
+    height: 160px;
+  }
+
+  .display-text {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 625px) {
+  .section-confirm-presence {
+    height: auto;
+    max-width: 600px;
+    margin-bottom: 0px;
+  }
+
+  .section-confirm-presence .title {
+    font-size: 22px;
+  }
+
+  .section-confirm-presence .title h1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section-confirm-presence .display-buttons {
+    display: none;
+  }
+
+  .section-confirm-presence .display-mobile {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-green-transparent);
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border-radius: 25px;
+  }
+
+  .section-confirm-presence .button-and-legend {
+    margin-left: 0px;
+  }
+
+  .display-mobile .mobile-buttons2 {
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+  }
+
+  .section-confirm-presence .button-and-legend .text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 25px;
+  }
+
+  .button img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 450px) {
+  .section-confirm-presence {
+    margin-bottom: 0px;
+  }
+
+  .section-confirm-presence .title {
+    font-size: 18px;
+    width: 310px;
+  }
+
+  .section-confirm-presence .display-mobile {
+    width: 290px;
+  }
+
+  .section-confirm-presence .button-and-legend .text {
+    font-size: 20px;
+  }
+
+  .button img {
+    width: 130px;
+    height: 130px;
+  }
+
+  .display-informative .icon {
+    width: 75px;
+  }
+}
+

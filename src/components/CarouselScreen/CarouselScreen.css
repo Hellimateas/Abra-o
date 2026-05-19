@@ -1,0 +1,237 @@
+.section-carousel-screen {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(180deg, #91D8F6 0%, #72bae4 50%, #b3d2f4 100%);
+  height: auto;
+  padding-bottom: 50px;
+}
+
+.section-carousel-screen .container {
+  margin: 0px;
+}
+
+.section-carousel-screen .dispaly-text h1 {
+  line-height: 0.1;
+}
+
+.section-carousel-screen .dispaly-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1140px;
+}
+
+.section-carousel-screen .section-body .display-text h2 {
+  color: var(--color-primary-dark);
+  font-size: 28px;
+  font-family: "Finger Paint";
+  text-align: center;
+  line-height: 1.4;
+  margin-bottom: -30px;
+}
+
+.text-and-gif-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 0;
+  flex-wrap: nowrap;
+}
+
+.text-content {
+  color: var(--color-primary-dark);
+  font-size: 28px;
+  font-family: "Finger Paint";
+  text-align: center;
+  line-height: 1.4;
+  flex: 1;
+  max-width: 600px;
+}
+
+.gif-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.jesus-gif {
+  width: 230px;
+  height: auto;
+  border-radius: 10px;
+  transform: scaleX(-1);
+  margin-top: -25px;
+}
+
+.section-carousel-screen .display-carousel {
+  display: flex;
+  background-color: var(--color-primary-light-transparent);
+  width: 1140px;
+  justify-content: center;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  border-radius: 25px;
+}
+
+.carousel-slide {
+  width: 263px;
+  height: 350px;
+  object-fit: cover;
+  padding: 5px;
+}
+
+@media (max-width: 1291px) {
+  .section-carousel-screen {
+    height: auto;
+    margin-top: 0px;
+  }
+
+  .section-carousel-screen .dispaly-text {
+    max-width: 800px;
+  }
+
+  .section-carousel-screen .dispaly-text h1 {
+    font-size: 38px;
+  }
+
+  .section-carousel-screen .dispaly-text h2 {
+    font-size: 25px;
+  }
+
+  .section-carousel-screen .display-carousel {
+    width: 680px;
+  }
+
+  .carousel-slide {
+    width: 210px;
+    height: 280px;
+  }
+}
+
+@media (max-width: 816px) {
+
+  .section-carousel-screen .display-text {
+    max-width: 500px;
+  }
+
+  .section-carousel-screen .display-text h1 {
+    font-size: 35px;
+  }
+
+  .section-carousel-screen .section-body .display-text h2 {
+    font-size: 23px;
+  }
+
+  .text-and-gif-container {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .text-content {
+    font-size: 23px;
+  }
+
+  .jesus-gif {
+    width: 160px;
+    margin-top: 0px;
+  }
+
+  .section-carousel-screen .display-carousel {
+    width: 500px;
+  }
+
+  .carousel-slide {
+    width: 233px;
+    height: 260px;
+  }
+}
+
+@media (max-width: 600px) {
+  .text-and-gif-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .text-content {
+    font-size: 20px;
+    min-width: auto;
+    max-width: 100%;
+  }
+
+  .gif-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -20px;
+    width: 100%;
+  }
+
+  .jesus-gif {
+    width: 230px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 625px) {
+  .section-carousel-screen {
+    height: auto;
+  }
+
+  .section-carousel-screen .dispaly-text {
+    max-width: 450px;
+  }
+
+  .section-carousel-screen .dispaly-text h1 {
+    font-size: 33px;
+  }
+
+  .section-carousel-screen .section-body .display-text h2 {
+    font-size: 20px;
+  }
+
+  .text-content {
+    font-size: 20px;
+  }
+
+  .section-carousel-screen .display-carousel {
+    width: 450px;
+  }
+
+  .carousel-slide {
+    width: 293px;
+    height: 370px;
+  }
+
+  .swiperSlide {
+    text-align: center;
+  }
+}
+
+@media (max-width: 450px) {
+  .section-carousel-screen {
+    height: auto;
+    margin-top: 0px;
+  }
+
+  .section-carousel-screen .display-text {
+    max-width: 300px;
+  }
+
+  .section-carousel-screen .section-body .display-text h2 {
+    font-size: 18px;
+  }
+
+  .text-content {
+    font-size: 18px;
+  }
+
+  .section-carousel-screen .display-carousel {
+    width: 290px;
+  }
+}
+
