@@ -69,7 +69,7 @@ const AudioPlayer = ({ isPlaying, volume, hasPlayed, onAudioEnd }) => {
 
   return (
     <audio ref={audioRef} onEnded={handleAudioEnd} loop={false} preload="auto">
-      <source src="assets/music/3palavrinhas.mp3" type="audio/mpeg" />
+      <source src="assets/music/arca-de-noé.mp3" type="audio/mpeg" />
       Seu navegador não suporta o elemento de áudio.
     </audio>
   );

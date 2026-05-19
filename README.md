@@ -1,4 +1,4 @@
-## Convite de aniversário - Ravi Lucca
+## Convite de aniversário - Abraão Levi
 Projeto em React para convite de aniversário infantil, preparado para receber diferentes temas.
 
 ### Ambiente e variáveis sensíveis
@@ -8,6 +8,6 @@ Projeto em React para convite de aniversário infantil, preparado para receber d
 
 ### Temas
 
-- O tema atual é **Três Palavrinhas** para o aniversário do **Ravi Lucca**.
+- O tema atual é **A arca de noé** para o aniversário do **Abraão Levi**.
 - Os textos e informações principais ficam centralizados em `src/theme/`.
 

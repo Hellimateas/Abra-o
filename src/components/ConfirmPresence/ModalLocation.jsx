@@ -41,11 +41,9 @@ const ModalLocation = ({ open, handleClose }) => {
                   </span>
                   <br />
                   <span>
-                    Boqueirão dos Pereiras
-                    <br />
-                    Frank
-                    {/*} <br />
-                    Sítio Higino */}
+                    VR Eventos
+                    <br />Rua Guariguazil, 213
+                    Sitio Boa Fé
                   </span>
                 </div>
                 <div
@@ -56,27 +54,20 @@ const ModalLocation = ({ open, handleClose }) => {
                   }}
                 >
                   <span>
-                    <strong>Local do Evendo:</strong>
+                    <strong>Local do Evento:</strong>
                   </span>
-                  <img
-                    width={"250px"}
-                    height={"250px"}
-                    src="assets/svg/local.svg"
-                    alt="Mapa do local do evento"
-                  />
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1989.7491389670147!2d-38.255218272117425!3d-4.121881172149372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b897b1b9af65a7%3A0x187cb640f454c1db!2sVR%20EVENTOS%20CASCAVEL%20CE!5e0!3m2!1spt-BR!2sbr!4v1779200778912!5m2!1spt-BR!2sbr"
+                    width="100%"
+                    height="250"
+                    style={{ border: 0 }}
+                    allowFullScreen=""
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    title="Mapa do local do evento"
+                  ></iframe>
+                  
                 </div>
-                {/* <div style={{ display: "flex", alignItems: "center" }}>
-                  <span>
-                    <strong>Acesse a localização clicando aqui:</strong>
-                  </span>
-                  <IconButton
-                    color="primary"
-                    aria-label="add an alarm"
-                    onClick={handleLocation}
-                  >
-                    <LocationOnIcon />
-                  </IconButton>
-                </div> */}
               </Grid>
             </Grid>
           </DialogContent>
