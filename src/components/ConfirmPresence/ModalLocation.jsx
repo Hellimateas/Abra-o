@@ -7,7 +7,7 @@ import CancelIcon from "@mui/icons-material/Cancel";
 
 const ModalLocation = ({ open, handleClose }) => {
   // const handleLocation = () => {
-  //   const latitude = -4.1218522; // Substitua com a latitude da sua localização
+  //   const latitude = -4.1218522; // Substitua com a latitude da sua localização -4.121876, -38.255503
   //   const longitude = -38.2553958; // Substitua com a longitude da sua localização
   //   const url = `https://www.google.com/maps?q=${latitude},${longitude}`;
   //   window.open(url, "_blank");
@@ -41,7 +41,7 @@ const ModalLocation = ({ open, handleClose }) => {
                   </span>
                   <br />
                   <span>
-                    VR Eventos
+                    <a href="https://maps.app.goo.gl/9uuQdDg2ALPKQMZZ6">VR Eventos</a>
                     <br />Rua Guariguazil, 213
                     Sitio Boa Fé
                   </span>

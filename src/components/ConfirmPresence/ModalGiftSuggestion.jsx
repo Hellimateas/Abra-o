@@ -18,7 +18,7 @@ const ModalGiftSuggestion = ({ open, handleClose }) => {
     },
     {
       img: "assets/svg/shoes.svg",
-      desc: "Calço 21/22",
+      desc: "Calço 23/24",
     },
     {
       img: "assets/svg/toys.svg",
